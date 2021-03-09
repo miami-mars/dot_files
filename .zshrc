@@ -194,3 +194,8 @@ if [ -f '/home/jorge_perezjr/google-cloud-sdk/path.zsh.inc' ]; then . '/home/jor
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/jorge_perezjr/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/jorge_perezjr/google-cloud-sdk/completion.zsh.inc'; fi
+
+#PyEnv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
