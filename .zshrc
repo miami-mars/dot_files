@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/jorge_perezjr/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -138,3 +138,6 @@ if [ -f '/home/jorge_perezjr/google-cloud-sdk/completion.zsh.inc' ]; then . '/ho
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# WSL Keychain
+/usr/bin/keychain -q --nogui $HOME/.ssh/jorslu_root_ed25519
