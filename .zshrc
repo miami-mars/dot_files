@@ -92,8 +92,9 @@ alias gsh='git show --pretty'
 alias gst='git stash'
 
 # Python Aliases
-alias p='python'
-alias pmp='python -m pytest'
+alias python='python3'
+alias p='python3'
+alias pmp='python3 -m pytest'
 alias mkvenv='mkvirtualenv -p /usr/local/bin/python3'
 alias upgrade_pip='pip freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs pip install -U'
 
@@ -106,6 +107,8 @@ alias pmmm='python manage.py makemigrations'
 
 # WSL Keychain
 /usr/bin/keychain -q --nogui $HOME/.ssh/jorslu_root_ed25519
+/usr/bin/keychain -q --nogui $HOME/.ssh/id_ed25519
+source $HOME/.keychain/$HOST-sh
 
 #PATHS
 # If you come from bash, you may have to change your $PATH
