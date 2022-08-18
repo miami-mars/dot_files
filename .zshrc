@@ -60,8 +60,7 @@ SAVEHIST=1000000000
 
 # ALIAS
 # Random Aliases
-alias ec='exercism'
-alias cdd='cd ~/Development'
+alias cdc='cd ~/code'
 alias sshr='ssh-keygen -t rsa -b 4096 -C "me@juniorjorge.com"'
 alias ssheval='eval $(ssh-agent -s)'
 alias sz='source ~/.zshrc'
@@ -104,10 +103,9 @@ alias pmr='python manage.py runserver'
 alias pmm='python manage.py migrate'
 alias pmmm='python manage.py makemigrations'
 
-# Link Alias - Typically a one time thing
 
-alias lnv='ln -s ~/Code/.dotfiles/.vimrc ~/.vimrc'
-alias lnz='ln -s ~/Code/.dotfiles/.zshrc ~/.zshrc'
+# WSL Keychain
+/usr/bin/keychain -q --nogui $HOME/.ssh/jorslu_root_ed25519
 
 #PATHS
 # If you come from bash, you may have to change your $PATH
@@ -138,6 +136,3 @@ if [ -f '/home/jorge_perezjr/google-cloud-sdk/completion.zsh.inc' ]; then . '/ho
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
-
-# WSL Keychain
-/usr/bin/keychain -q --nogui $HOME/.ssh/jorslu_root_ed25519
