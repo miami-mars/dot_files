@@ -54,7 +54,7 @@ setopt AUTO_CD
 setopt appendhistory
 
 #The more history you know, the better you can predict the future
-HISTFILE='~/.zsh_history'
+HISTFILE=~/.zsh_history
 HISTSIZE=1000000000
 SAVEHIST=1000000000
 
