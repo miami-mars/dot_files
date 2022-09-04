@@ -62,6 +62,7 @@ SAVEHIST=1000000000
 # Random Aliases
 alias cdc='cd ~/code'
 alias sshr='ssh-keygen -t rsa -b 4096 -C "me@juniorjorge.com"'
+alias sshe='ssh-keygen -t ed25519 -C "me@juniorjorge.com"'
 alias ssheval='eval $(ssh-agent -s)'
 alias sz='source ~/.zshrc'
 alias vzrc='vim ~/.zshrc'
